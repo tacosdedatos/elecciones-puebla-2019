@@ -1,0 +1,1 @@
+install.packages("plyr", "dplyr", "tidyr", "ggplot2", "foreign", "readxl", "readstata13", "tidyverse", "stringr", "RColorBrewer", "scales", "doBy", "reshape2", "gridExtra", "Hmisc", "ggmap", "rgdal", "rgeos", "so", "maptools", "DeducerSpatial", "mapproj", "raster", "sf", "rayshader", "gganimate")

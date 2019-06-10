@@ -162,7 +162,7 @@ write.csv(tempoA, paste(dir4, "elecciones_puebla_por_municipio_computo_2019.csv"
 #HACER POLIGONO. PRIMER PASO
 
 #Abrir shapefiles
-munics_puebla <- shapefile("/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019/data/in/mapas_puebla/MUNICIPIO.shp")
+munics_puebla <- shapefile("../data/in/mapas_puebla/MUNICIPIO.shp")
 
 #EXPLORAR OBJETO
 head(munics_puebla@data)

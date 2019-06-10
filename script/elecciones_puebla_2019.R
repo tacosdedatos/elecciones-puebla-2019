@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd("~")
+setwd(".")
 
 ##############################
 #                            #
@@ -18,10 +18,10 @@ library(viridis)
 
 
 
-dir1 <- "/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019/data/in"  # poner ruta 
-dir2 <- "/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019/graphs"  # poner ruta
-dir3 <- "/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019//mapas"
-dir4 <- "/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019/data/out"
+dir1 <- "../data/in"  # poner ruta 
+dir2 <- "../graphs"  # poner ruta
+dir3 <- "../mapas"
+dir4 <- "../data/out"
 
 
 

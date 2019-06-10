@@ -18,10 +18,10 @@ library(viridis)
 
 
 
-dir1 <- "../data/in"  # poner ruta 
-dir2 <- "../graphs"  # poner ruta
-dir3 <- "../mapas"
-dir4 <- "../data/out"
+dir1 <- "./data/in"  # poner ruta 
+dir2 <- "./graphs"  # poner ruta
+dir3 <- "./mapas"
+dir4 <- "./data/out"
 
 
 
@@ -162,7 +162,7 @@ write.csv(tempoA, paste(dir4, "elecciones_puebla_por_municipio_computo_2019.csv"
 #HACER POLIGONO. PRIMER PASO
 
 #Abrir shapefiles
-munics_puebla <- shapefile("../data/in/mapas_puebla/MUNICIPIO.shp")
+munics_puebla <- shapefile("./data/in/mapas_puebla/MUNICIPIO.shp")
 
 #EXPLORAR OBJETO
 head(munics_puebla@data)
@@ -496,7 +496,7 @@ write.csv(tempoB, paste(dir4, "computos_elecciones_puebla_por_seccion_2019.csv",
 #HACER POLIGONO. PRIMER PASO
 
 #Llamar shapefiles
-secc_puebla <- shapefile("/media/hectorpina/yanipaperdisk/Proyectos R/elecciones_puebla_2019/data/in/mapas_puebla/SECCION.shp")
+secc_puebla <- shapefile("./data/in/mapas_puebla/SECCION.shp")
 
 #EXPLORAR OBJETO
 head(secc_puebla@data)

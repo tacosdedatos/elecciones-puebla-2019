@@ -18,7 +18,7 @@ library(viridis)
 if (!require(rgeos)) install.packages('rgeos')
 library(rgeos)
 library(maptools)
-if (!require(mapproj) install.packages('mapproj')
+if (!require(mapproj)) install.packages('mapproj')
 library(mapproj)
 
 

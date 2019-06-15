@@ -1,2 +1,2 @@
 install.packages(c("plyr", "dplyr", "tidyr", "ggplot2", "readxl", "tidyverse", "stringr", "raster", "viridis"))
-install.packages(c("rgdal", "maptools"))
+install.packages(c("rgdal", "maptools", "rgeos", "mapproj"))

@@ -15,7 +15,11 @@ library(tidyr) # "tidy data" o el paquete que SIEMPRE van a prender
 library(raster)
 library(ggplot2)
 library(viridis)
-
+if (!require(rgeos)) install.packages('rgeos')
+library(rgeos)
+library(maptools)
+if (!require(mapproj) install.packages('mapproj')
+library(mapproj)
 
 
 dir1 <- "./data/in"  # poner ruta 
@@ -203,7 +207,7 @@ ggplot() +
 municipiosDF <- merge(pueblaDF, tempoA, by.x="id", by.y="ID_MUNICIPIO", all.y=T)
 
 #Remover objetos
-rm(munics_puebla, pueblaDF, tempoA)
+#rm(munics_puebla, pueblaDF, tempoA)
 
 
 ####################################################################################
@@ -531,7 +535,7 @@ ggplot() +
 seccionesDF <- merge(puebla_seccDF, tempoB, by.x="id", by.y="SECCION", all.y=T)
 
 #Remover objetos
-rm(secc_puebla, puebla_seccDF, tempoB)
+#rm(secc_puebla, puebla_seccDF, tempoB)
 
 ####################################################################################
 
@@ -680,4 +684,4 @@ ggsave(paste(dir3, "computos_jimenez_votos_seccion_puebla2019.png", sep="/"), pl
 ##############################################################################################
 
 ##### Remover objetos
-rm(seccionesDF, map)
+#rm(seccionesDF, map)
